@@ -112,6 +112,10 @@ PRODUCT_PACKAGES += \
     MatLog \
     SimpleDeviceConfig
 
+# Google proprietary packages
+PRODUCT_PACKAGES += \
+    MarkupGoogle
+
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
