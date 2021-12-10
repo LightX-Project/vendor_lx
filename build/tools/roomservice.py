@@ -52,7 +52,7 @@ except:
     device = product
 
 if not depsonly:
-    print("Device %s not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/LineageOS)." % device)
+    print("Device %s not found. Attempting to retrieve device repository from LightX-Project Github (http://github.com/LightX-Project)." % device)
 
 repositories = []
 
@@ -166,7 +166,7 @@ def is_in_manifest(projectpath):
 
     # ... and don't forget the lineage snippet
     try:
-        lm = ElementTree.parse(".repo/manifests/snippets/lineage.xml")
+        lm = ElementTree.parse(".repo/manifests/snippets/lx.xml")
         lm = lm.getroot()
     except:
         lm = ElementTree.Element("manifest")
@@ -192,9 +192,9 @@ def add_to_manifest(repositories, fallback_branch = None):
             print('LineageOS/%s already fetched to %s' % (repo_name, repo_target))
             continue
 
-        print('Adding dependency: LineageOS/%s -> %s' % (repo_name, repo_target))
+        print('Adding dependency: LightX-Project/%s -> %s' % (repo_name, repo_target))
         project = ElementTree.Element("project", attrib = { "path": repo_target,
-            "remote": "github", "name": "LineageOS/%s" % repo_name })
+            "remote": "github", "name": "LightX-Project/%s" % repo_name })
 
         if 'branch' in repository:
             project.set('revision',repository['branch'])
@@ -216,7 +216,7 @@ def add_to_manifest(repositories, fallback_branch = None):
 
 def fetch_dependencies(repo_path, fallback_branch = None):
     print('Looking for dependencies in %s' % repo_path)
-    dependencies_path = repo_path + '/lineage.dependencies'
+    dependencies_path = repo_path + '/lx.dependencies'
     syncable_repos = []
     verify_repos = []
 
@@ -315,4 +315,4 @@ else:
             print("Done")
             sys.exit()
 
-print("Repository for %s not found in the LineageOS Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml." % device)
+print("Repository for %s not found in the LightX-Project Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml." % device)
