@@ -108,7 +108,9 @@ PRODUCT_PACKAGES += \
     Etar \
     ExactCalculator \
     Jelly \
-    Recorder
+    Recorder \
+    MatLog \
+    SimpleDeviceConfig
 
 # Config
 PRODUCT_PACKAGES += \
