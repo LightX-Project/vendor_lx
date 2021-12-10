@@ -122,6 +122,9 @@ PRODUCT_PACKAGES += \
 # Lawnchair
 -include vendor/syberia/prebuilt/Lawnchair/lawnchair.mk
 
+# Version
+include vendor/syberia/config/version.mk
+
 # rsync
 PRODUCT_PACKAGES += \
     rsync
