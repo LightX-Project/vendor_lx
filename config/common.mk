@@ -110,7 +110,6 @@ PRODUCT_PACKAGES += \
     Jelly \
     Recorder \
     MatLog \
-    SimpleDeviceConfig
 
 # Google proprietary packages
 PRODUCT_PACKAGES += \
@@ -119,6 +118,9 @@ PRODUCT_PACKAGES += \
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
+
+# Lawnchair
+-include vendor/syberia/prebuilt/Lawnchair/lawnchair.mk
 
 # rsync
 PRODUCT_PACKAGES += \
