@@ -78,11 +78,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode=true
 
-# Include AOSP audio files
-include vendor/lx/config/aosp_audio.mk
-
-# Include LineageOS audio files
-include vendor/lx/config/lineage_audio.mk
+# Include AOSP Material audio files
+include vendor/lx/config/audio.mk
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
