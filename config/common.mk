@@ -82,7 +82,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 include vendor/lx/config/aosp_audio.mk
 
 # Include LineageOS audio files
-include vendor/lx/config/lx_audio.mk
+include vendor/lx/config/lineage_audio.mk
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
@@ -120,10 +120,10 @@ PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
 # Lawnchair
--include vendor/syberia/prebuilt/Lawnchair/lawnchair.mk
+-include vendor/lx/prebuilt/Lawnchair/lawnchair.mk
 
 # Version
-include vendor/syberia/config/version.mk
+include vendor/lx/config/version.mk
 
 # rsync
 PRODUCT_PACKAGES += \
