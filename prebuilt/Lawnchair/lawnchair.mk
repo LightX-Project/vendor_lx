@@ -1,5 +1,5 @@
 # Lawnchair
-LAWN_ROOT := vendor/syberia/prebuilt/Lawnchair
+LAWN_ROOT := vendor/lx/prebuilt/Lawnchair
 
 PRODUCT_PACKAGES += Lawnchair
 PRODUCT_PACKAGE_OVERLAYS += $(LAWN_ROOT)/overlay
