@@ -102,7 +102,7 @@ PRODUCT_PACKAGES += \
 # Packages
 PRODUCT_PACKAGES += \
     Eleven \
-    Etar \
+#    Etar \
     ExactCalculator \
     Jelly \
     Recorder \
